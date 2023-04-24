@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/styles/contact.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar-container">
+      <a class="logo" href="#">GetHome</a>
+      <ul class="navbar-menu">
+        <li class="menu-item"><a href="/template/index.html">Bosh sahifa</a></li>
+        <li class="menu-item"><a href="#">Mahsulotlar</a></li>
+        <li class="menu-item"><a href="#">Xizmatlar</a></li>
+        <li class="menu-item"><a href="/template/about.html">Biz haqimizda</a></li>
+        <li class="menu-item"><a href="/template/contact.html">Bog'lanish</a></li>
+        <li class="menu-item buy-now"><a href="#">Xarid qilish</a></li>
+      </ul>
+      <div class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Bog'lanish</h2>
+      <p class="section-description">Biz siz bilan bog'lanishimiz uchun quyidagi formani to'ldiring</p>
+      <form class="contact-form" action="send-email.php" method="POST">
+        <div class="form-group">
+          <label for="name">Ismingiz:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail manzilingiz:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Xabaringiz: Xabarda sizga necha xonalik uy narxi nechta odam uchun va telefon
+            taqamingizni shu malumotlarni kiriting</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button class="btn" type="submit">Jo'natish</button>
+      </form>
+    </div>
+  </section>
+  <script src="/scripts/contact.js"></script>
+</body>
+
+</html>
